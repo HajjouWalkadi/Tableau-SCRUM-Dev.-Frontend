@@ -40,7 +40,7 @@
 				<div class="">
 					<!-- <button class="btn btn-info btn-outline-info rounded-pill" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="bi bi-plus-lg"></i> Add Task</a> -->
 						<div class="">
-							<button class="btn btn-info rounded-pill" data-bs-toggle="modal" data-bs-target="#add-task"><i class="bi bi-plus-lg"></i> Add Task</a>
+							<button onclick="cleanForm()" class="btn btn-info rounded-pill" data-bs-toggle="modal" data-bs-target="#add-task"><i class="bi bi-plus-lg"></i> Add Task</button>
 						</div>
 				</div>
 			</div>
@@ -49,12 +49,12 @@
 				<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
 					<div class="card">
 						<div class="card-header bg-dark">
-							<h4 class="text-white">To do (<span id="to-do-tasks-count">5</span>)</h4>
+							<h4 class="text-white">To do (<span id="to-do-tasks-count"></span>)</h4>
 
 						</div>
 						<div class="" id="to-do-tasks">
 							<!-- TO DO TASKS HERE -->
-							<button class="d-flex button border w-100 p-1">
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-question-circle text-success"></i>
 								</div>
@@ -71,8 +71,8 @@
 										<span class="btn btn-gray-500 text-black">Feature</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-question-circle text-success"></i>
 								</div>
@@ -91,8 +91,8 @@
 										<span class="btn btn-gray-500 text-black">Feature</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-question-circle text-success"></i>
 								</div>
@@ -109,8 +109,8 @@
 										<span class="btn btn-gray-500 text-black">Feature</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-question-circle text-success"></i>
 								</div>
@@ -127,13 +127,13 @@
 										<span class="btn btn-gray-500 text-black">Feature</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-question-circle text-success"></i>
 								</div>
 								<div class="text-start col-md-11">
-									<div class="fw-bold">Use charts and diagrams</div>
+	                                                                                          								<div class="fw-bold">Use charts and diagrams</div>
 									<div class="">
 										<div class="text-muted">#5 created in 2022-10-08</div>
 										<div class="fst-normal"
@@ -145,19 +145,19 @@
 										<span class="btn btn-gray-500 text-black">Feature</span>
 									</div>
 								</div>
-							</button>
+							</button> -->
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
 					<div class="card">
 						<div class="card-header bg-dark">
-							<h4 class="text-white">In Progress (<span id="in-progress-tasks-count">4</span>)</h4>
+							<h4 class="text-white">In Progress (<span id="in-progress-tasks-count"></span>)</h4>
 
 						</div>
 						<div class="" id="in-progress-tasks">
 							<!-- IN PROGRESS TASKS HERE -->
-							<button class="d-flex button border w-100 p-1">
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bx bx-loader-alt text-success"></i>
 								</div>
@@ -168,14 +168,13 @@
 										<div class="fst-normal" title="including as many details as possible.">including as many
 											details as possible.</div>
 									</div>
-									<!-- my-10px == margin bottom pour les bouttons -->
 									<div class="my-10px">
 										<span class="btn btn-primary rounded">High</span>
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bx bx-loader-alt text-success"></i>
 								</div>
@@ -192,8 +191,8 @@
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bx bx-loader-alt text-success"></i>
 								</div>
@@ -210,8 +209,8 @@
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bx bx-loader-alt text-success"></i>
 								</div>
@@ -228,19 +227,19 @@
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
+							</button> -->
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 col-sm-12 mb-3">
 					<div class="card">
 						<div class="card-header bg-dark">
-							<h4 class="text-white">Done (<span id="done-tasks-count">4</span>)</h4>
+							<h4 class="text-white">Done (<span id="done-tasks-count"></span>)</h4>
 
 						</div>
 						<div class=" " id="done-tasks">
 							<!-- DONE TASKS HERE -->
-							<button class="d-flex button border w-100 p-1">
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-check-circle text-success"></i>
 								</div>
@@ -257,8 +256,8 @@
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-check-circle text-success"></i>
 								</div>
@@ -275,8 +274,8 @@
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-check-circle text-success"></i>
 								</div>
@@ -293,8 +292,8 @@
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
-							<button class="d-flex button border w-100 p-1">
+							</button> -->
+							<!-- <button class="d-flex button border w-100 p-1">
 								<div class="col-md-1">
 									<i class="bi bi-check-circle text-success"></i>
 								</div>
@@ -311,7 +310,7 @@
 										<span class="btn btn-gray-500 text-black">Bug</span>
 									</div>
 								</div>
-							</button>
+							</button> -->
 						</div>
 					</div>
 				</div>
@@ -333,25 +332,26 @@
 		  <div class="modal-content">
 			<div class="modal-header">
 			  <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
-			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  <button type="button" id="openModal" class="btn-close"  data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
-			  <form>
+			  <form name="addTask">
+				<input type="hidden" name="id">
 				<div class="mb-3">
 				  <label for="recipient-name" class="col-form-label">Title</label>
-				  <input type="text" class="form-control" id="recipient-name">
+				  <input type="text" class="form-control" id="input_recipient_name" name="title">
 				</div>
 
 				<div class="mb-3">
 					<label for="recipient-name" class="col-form-label">Type</label>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+						<input class="form-check-input" type="radio" name="type" id="input_feature_id" value="Feature" checked>
 						<label class="form-check-label" for="flexRadioDefault1">
 						  Feature
 						</label>
 					  </div>
 					<div class="form-check">
-						<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+						<input class="form-check-input" type="radio" name="type" id="input_bug_id" value="Bug">
 						<label class="form-check-label" for="flexRadioDefault2">
 						  Bug
 						</label>
@@ -360,38 +360,39 @@
 
 				<div class="mb-3">
 				<label for="recipient-name" class="col-form-label">Priority</label>
-				<select class="form-select" aria-label="Default select example">
+				<select name="priority" class="form-select" aria-label="Default select example" id="priority">
 					<option selected>Please select</option>
-					<option value="1">Low</option>
-					<option value="2">Medium</option>
-					<option value="3">High</option>
-					<option value="4">Critical</option>
+					<option value="Low">Low</option>
+					<option value="Medium">Medium</option>
+					<option value="High">High</option>
+					<option value="Critical">Critical</option>
 
 				  </select>
 				</div>
 				<div class="mb-3">
 					<label for="recipient-name" class="col-form-label">Status</label>
-					<select class="form-select" aria-label="Default select example">
+					<select name="status" class="form-select" aria-label="Default select example" id="status">
 						<option selected>Please select</option>
-						<option value="1">To Do</option>
-						<option value="2">In Progress</option>
-						<option value="3">Done</option>
+						<option value="To Do">To Do</option>
+						<option value="In Progress">In Progress</option>
+						<option value="Done">Done</option>
 					  </select>
 					</div>
 				<div class="mb-3">
 					<label for="recipient-name" class="col-form-label">Date</label>
-					<input id="date" type="date" class="form-control">
+					<input name="date" id="date" type="date" class="form-control">
 
                 </div>
 				<div class="mb-3">
 				  <label for="message-text" class="col-form-label">Description</label>
-				  <textarea class="form-control" id="message-text"></textarea>
+				  <textarea name="description" class="form-control" id="message-text"></textarea>
 				</div>
 			  </form>
 			</div>
 			<div class="modal-footer">
 			  <button type="button" class="btn btn-white" data-bs-dismiss="modal">Cancel</button>
-			  <button type="button" class="btn btn-primary">Save</button>
+			  <button type="button" onclick="AjouterTask()" class="btn btn-primary" id="btnSave" data-bs-dismiss="modal">Save</button>
+			  <button type="button" onclick="saveChanges()" class="btn btn-primary" id="btnUpdate" data-bs-dismiss="modal">Update</button>
 			</div>
 		  </div>
 		</div>
@@ -400,6 +401,9 @@
 	<!-- ================== BEGIN core-js ================== -->
 	<script src="assets/js/vendor.min.js"></script>
 	<script src="assets/js/app.min.js"></script>
+	<script src="assets/js/data.js"></script>
+	<script src="assets/js/app.js"></script>
+
 	<!-- ================== END core-js ================== -->
 </body>
 
