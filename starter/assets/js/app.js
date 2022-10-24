@@ -7,7 +7,7 @@ function AjouterTask() {
     let form = document.forms["addTask"];
 
     let task = {
-        id: tasks[tasks.length -1].id + 1,
+        id: tasks[tasks.length - 1].id + 1,
         title: form.title.value,
         type: form.type.value,
         priority: form.priority.value,
@@ -20,7 +20,7 @@ function AjouterTask() {
     Afficher();
 }
 
-function cleanForm(){
+function cleanForm() {
     document.getElementById("input_recipient_name").value = ""
     document.getElementById("message-text").value = ""
     document.getElementById("status").value = ""
@@ -43,12 +43,12 @@ function Afficher() {
     let description;
 
     for (let i = 0; i < tasks.length; i++) {
-        if (tasks[i].status == "To Do") { //value
+        if (tasks[i].status == "To Do") {
             counter_to_do++;
 
-            if(tasks[i].description.length>50){
-                description = tasks[i].description.substring(0,50);
-            }else{
+            if (tasks[i].description.length > 50) {
+                description = tasks[i].description.substring(0, 50);
+            } else {
                 description = tasks[i].description;
             }
             todotasks.innerHTML += `<button id="${tasks[i]["id"]}" class="d-flex button border  w-100 p-1">
@@ -71,9 +71,9 @@ function Afficher() {
         }
         else if (tasks[i].status == "In Progress") {
             counter_in_progress++;
-            if(tasks[i].description.length>50){
-                description = tasks[i].description.substring(0,50);
-            }else{
+            if (tasks[i].description.length > 50) {
+                description = tasks[i].description.substring(0, 50);
+            } else {
                 description = tasks[i].description;
             }
             doingtasks.innerHTML +=
@@ -99,9 +99,9 @@ function Afficher() {
         }
         else if (tasks[i].status == "Done") {
             counter_done++;
-            if(tasks[i].description.length>50){
-                description = tasks[i].description.substring(0,55);
-            }else{
+            if (tasks[i].description.length > 50) {
+                description = tasks[i].description.substring(0, 55);
+            } else {
                 description = tasks[i].description;
             }
             donetasks.innerHTML += `<button id="${tasks[i]["id"]}" class="d-flex button border  w-100 p-1 call">
@@ -140,62 +140,6 @@ function deleteTask(id) {
     }
     Afficher();
 
-}
-function createTask() {
-    // initialiser task form
-
-    // Afficher le boutton save
-
-    // Ouvrir modal form
-    
-}
-// function saveTask() {
-//     // Recuperer task attributes a partir les champs input
-
-//     // Créez task object
-
-//     // Ajoutez object au Array
-
-//     // refresh tasks    
-// }
-
-function editTask(index) {
-    // Initialisez task form
-
-    // Affichez updates
-
-    // Delete Button
-
-    // Définir l’index en entrée cachée pour l’utiliser en Update et Delete
-
-    // Definir FORM INPUTS
-
-    // Ouvrir Modal form
-}
-
-function updateTask() {
-    // GET TASK ATTRIBUTES FROM INPUTS
-
-    // Créez task object
-
-    // Remplacer ancienne task par nouvelle task
-
-    // Fermer Modal form
-
-    // Refresh tasks
-
-}
-
-function initTaskForm() {
-    // Clear task form from data
-
-    // Hide all action buttons
-}
-
-function reloadTasks() {
-    // Remove tasks elements
-
-    // Set Task count
 }
 
 function saveTask(event) {
